@@ -1,4 +1,182 @@
 body {
-    margin: 1.5em;
+    margin: auto;
     font-family: 'Roboto';
+    background: #000000;
+    color: #FFFFFF;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+        width: 3em;
+        margin: auto;
+        cursor: pointer;
+    }
+
+}
+
+.logo-barth {
+    height: 100px;
+    width: 100px;
+}
+
+.hamburger {
+    float: right;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.download {
+    margin: auto;
+
+    a {
+        color: white;
+        text-transform: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+
+
+        &:hover {
+            background: none;
+            color: #252525;
+        }
+    }
+}
+
+.opentime {
+    display: grid;
+    text-align: right;
+    font-size: 12px;
+    background: #252525;
+    padding-right: 20px;
+
+}
+
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #e5e5e5;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+
+    .close {
+        float: right;
+        margin: 2em;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 50px;
+    margin-top: 6em;
+
+    a {
+        color: #000000;
+        padding: .75em 2em;
+        display: block;
+
+        &:hover {
+            background: #9e9a9a;
+        }
+    }
+
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.container {
+    background: #B50014;
+    height: 93px;
+
+}
+
+.open-nav {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width: 640px) {
+    header {
+        padding: 0px 100px;
+    }
+}
+
+@media only screen and (min-width: 940px) {
+    .menu {
+        display: none;
+    }
+
+    nav {
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+
+        svg.close {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+
+        }
+
+        a {
+            color: white;
+            text-transform: none;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            padding: 2.5em 1.5em;
+
+            &:hover {
+                background: none;
+                color: #252525;
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        width: 1400px;
+        margin: 0 auto;
+    }
+
+    .logo-barth {
+        height: 150px;
+        width: 150px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
 }
