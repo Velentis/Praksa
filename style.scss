@@ -63,7 +63,7 @@ nav {
     position: fixed;
     right: 0;
     top: 0;
-    background: #e5e5e5;
+    background: #ffffff;
     height: 100vh;
     width: 50%;
     z-index: 999;
@@ -108,8 +108,7 @@ a {
 
 .container {
     background: #B50014;
-    height: 93px;
-
+    height: 100%;
 }
 
 .open-nav {
@@ -117,12 +116,32 @@ a {
 }
 
 @media only screen and (min-width: 640px) {
+
     header {
         padding: 0px 100px;
+        height: 93px;
     }
 }
 
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width: 1281px) {
+
+    .dry-aged {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 7em;
+        padding: 4%;
+        padding-right: 25%;
+        margin: 0 auto;
+
+
+    }
+
+    .dry-aged-text {
+        padding-left: 45%;
+        padding-right: 10%;
+
+    }
+
     .menu {
         display: none;
     }
@@ -151,7 +170,7 @@ a {
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
-            line-height: 19px;
+            line-height: 14px;
             padding: 2.5em 1.5em;
 
             &:hover {
@@ -164,7 +183,9 @@ a {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
+
+
     header {
         width: 1400px;
         margin: 0 auto;
@@ -179,4 +200,210 @@ a {
         display: block;
     }
 
+}
+
+.hero {
+    display: grid;
+    background-image: url(/images/brath-metzgermeister.jpg);
+    height: 42rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    margin-inline: auto;
+
+
+    .hero-content {
+        text-align: left;
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+
+        height: 348px;
+        left: 0px;
+        top: 287px;
+
+
+
+
+
+
+        h1 {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.3rem;
+            line-height: 2.8rem;
+            width: auto;
+            padding-left: 18rem;
+            padding-right: 5.5rem;
+
+
+        }
+
+        .subhead {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            width: auto;
+            padding-left: 18rem;
+            padding-right: 5.5rem;
+            padding-bottom: 2rem;
+
+        }
+
+
+    }
+
+}
+
+
+
+
+
+
+.hero-content {
+    text-align: left;
+    background: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    width: 629px;
+    height: 21rem;
+    margin-inline: auto;
+
+
+
+
+
+
+    h1 {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+        width: auto;
+
+
+    }
+
+    .subhead {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: auto;
+
+
+    }
+}
+
+.dry-aged {
+    background-color: #0d0d0d;
+    text-align: left;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    padding-left: 3%;
+
+
+
+    img {
+        width: 100%;
+        max-width: 537px;
+        object-fit: cover;
+    }
+
+    .dry-aged-text {
+        padding: 30 px;
+    }
+
+
+
+}
+
+.dry-aged-text {
+
+
+    h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    h3 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    max-width: 167px;
+}
+
+.column-main {
+
+    width: 100%;
+    padding: 15px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+button {
+    background: #A62120;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 174px;
+    height: 47px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+
+
+
+
+}
+
+button:hover {
+    background-color: #3d0505;
+    border: none;
+
+}
+
+.button-space {
+    display: flex;
+    gap: 2em;
+    margin: auto;
 }
