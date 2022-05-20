@@ -5,8 +5,11 @@ body {
     color: #FFFFFF;
 }
 
-header {
+.container-header {
+    background: #B50014;
+}
 
+header {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -110,7 +113,7 @@ a {
 }
 
 .container {
-    background: #B50014;
+
     height: 100%;
 }
 
@@ -183,6 +186,8 @@ a {
 }
 
 @media only screen and (max-width: 850px) {
+
+
     .hero-content-text {
         padding: 1% 1% 1% 1%;
         max-width: 100%;
@@ -205,22 +210,34 @@ a {
         padding: 0px 10px;
         height: 93px;
     }
+
 }
 
+
 @media only screen and (min-width: 1281px) {
+
+
+    .divider {
+        margin: auto;
+        width: 65%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
 
     .dry-aged {
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 7em;
         padding: 4%;
-        padding-right: 25%;
+        padding-right: 20%;
         margin: 0 auto;
 
 
     }
 
     .dry-aged-text {
+        text-align: left;
         padding-left: 45%;
         padding-right: 10%;
 
@@ -292,7 +309,7 @@ a {
 
 .dry-aged {
     background-color: #0d0d0d;
-    text-align: left;
+    text-align: center;
     padding-top: 5%;
     padding-bottom: 4%;
     padding-left: 3%;
@@ -301,7 +318,7 @@ a {
 
     img {
         width: 100%;
-        max-width: 537px;
+
         object-fit: cover;
     }
 
@@ -346,11 +363,12 @@ a {
     box-sizing: border-box;
 }
 
+
+
 .column {
     float: left;
     width: 33.33%;
-    padding: 15px;
-    max-width: 167px;
+    padding: 10px;
 }
 
 .column-main {
@@ -359,7 +377,6 @@ a {
     padding: 15px;
 }
 
-/* Clearfix (clear floats) */
 .row::after {
     content: "";
     clear: both;
@@ -394,7 +411,348 @@ button:hover {
 }
 
 .button-space {
-    display: flex;
     gap: 2em;
     margin: auto;
+
+    button {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+    }
+
+
+}
+
+.grillkurs {
+
+    background-color: #A62120;
+    text-align: center;
+    width: 100%;
+
+
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .grillkurs-text {
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+
+
+
+}
+
+.grillkurs-button-space {
+    button {
+        background: #FFFFFF;
+        border: 1px solid #FF0000;
+        border-radius: 40px;
+        border-radius: 40px;
+        color: #252525;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        width: 10rem;
+        height: 3rem;
+        transition-duration: 0.4s;
+        cursor: pointer;
+
+
+
+
+
+    }
+
+    button:hover {
+        background-color: #3d0505;
+        color: #ffffff;
+        border: none;
+
+    }
+
+    .button-space {
+        display: flex;
+        gap: 2em;
+        margin: auto;
+    }
+}
+
+.grillkurs-text {
+    padding: 2%;
+
+
+    h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1281px) {
+
+
+    .spices {
+        display: flex;
+        width: 100%;
+        height: 702px;
+        grid-template-columns: repeat(2, auto);
+        text-align: left;
+
+
+    }
+
+    .spices-text {
+        text-align: left;
+        float: right;
+        width: 50%;
+        padding-top: 20%;
+        padding-right: 22%;
+
+        h2 {
+            padding-left: 10%;
+            padding-top: 10%;
+            text-align: left;
+            padding-right: 15%;
+            font-size: 50px;
+            line-height: 50px;
+        }
+
+        h3 {
+            padding-left: 10%;
+        }
+
+        p {
+            padding-left: 10%;
+            padding-right: 36%;
+        }
+
+    }
+
+    .spices-galery {
+        float: left;
+        width: 50%;
+
+        img {
+            object-fit: cover;
+
+
+        }
+    }
+
+
+
+    .grillkurs {
+        display: flex;
+        width: 100%;
+        height: 642px;
+        grid-template-columns: repeat(2, auto);
+        text-align: left;
+        margin: 0 auto;
+
+
+    }
+
+    .grillkurs-text {
+        float: left;
+        width: 50%;
+        padding-left: 22%;
+
+        h2 {
+            padding-right: 15%;
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+    }
+
+    .grillkurs-galery {
+        float: right;
+        width: 50%;
+
+        img {
+            object-fit: cover;
+
+
+        }
+    }
+}
+
+.hendwerk {
+    position: relative;
+    background-color: #0d0d0d;
+    text-align: center;
+    width: 100%;
+
+    .hendwerk-text {
+        padding: 2%;
+
+        h2 {
+
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        h3 {
+            font-size: 25px;
+            line-height: 35px;
+        }
+
+    }
+
+    .hendwerk-button {
+        padding: 2%;
+    }
+}
+
+.divider {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.divider::after,
+.divider::before {
+    content: "";
+    border: 0.5px solid #535353;
+    flex: 1;
+}
+
+.divider:not(:empty)::before {
+    margin-right: 0.25em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: 0.25em;
+}
+
+.grill-pics {
+    padding: 2%;
+    width: 100%;
+
+    img {
+        padding: 2%;
+    }
+}
+
+.spices {
+
+    background-color: #A62120;
+    text-align: center;
+    width: 100%;
+
+
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.spices-text {
+    padding: 2%;
+
+
+    h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+    }
+
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+}
+
+.fleischversand {
+
+    background-image: url(/images/fleischversand.png);
+    height: 32.5rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 26px;
+    padding-top: 7%;
+
+    button {
+        background: #FFFFFF;
+        border: 1px solid #FF0000;
+        border-radius: 40px;
+        border-radius: 40px;
+        color: #252525;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        width: 15rem;
+        height: 3.5rem;
+        transition-duration: 0.4s;
+        cursor: pointer;
+
+
+
+
+
+    }
+
+    button:hover {
+        background-color: #3d0505;
+        color: #ffffff;
+        border: none;
+
+    }
+
+    .button-space {
+        display: flex;
+        gap: 2em;
+        margin: auto;
+    }
 }
